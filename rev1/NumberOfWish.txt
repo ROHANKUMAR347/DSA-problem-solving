@@ -1,0 +1,17 @@
+public static void numberWish(int n, String str) {
+   HashMap<Character, Integer> map = new HashMap<>();
+   
+            for (char ch : str.toCharArray()) {
+                map.put(ch, map.getOrDefault(ch, 0) + 1);
+            }
+            
+            int countW = map.getOrDefault('w', 0);
+            int countI = map.getOrDefault('i', 0);
+            int countS = map.getOrDefault('s', 0);
+            int countH = map.getOrDefault('h', 0);
+           
+            int numberOfWish = Math.min(Math.min(countW, countI), Math.min(countS, countH));
+            
+            System.out.println(numberOfWish);
+            
+}
