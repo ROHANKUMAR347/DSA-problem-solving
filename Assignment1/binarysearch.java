@@ -11,6 +11,7 @@ public class binarysearch {
         }
         int ans = recurshiveBs(arr, k, 0, n - 1);
         System.out.println(ans);
+        obj.close();
     }
 
     public static int recurshiveBs(int[] arr, int k, int low, int high) {
